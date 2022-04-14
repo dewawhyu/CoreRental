@@ -3,11 +3,22 @@
 namespace App\Http\Livewire\Admin\Member;
 
 use Livewire\Component;
+use App\Models\Member;
+use Livewire\WithPagination;
 
-class MemberIndex extends Component
+class MemberIndex extends Component 
 {
+    use WithPagination;
+    protected $paginationTheme = 'bootstrap';
+    public $search;
     public function render()
     {
-        return view('livewire.admin.member.member-index');
+        $data_member = Member::latest()->paginate(5);
+        return view('livewire.admin.member.member-index',[
+            'members' => $this->search === null ?
+                Member::latest()->paginate(5) :
+                Member::where('namadepan','like','%'. $this->search . '%')->orWhere('email','like','%'. $this->search . '%')->latest()->paginate(5)
+            
+        ]);
     }
 }

@@ -75,6 +75,7 @@
     @yield('content')
 </main>
 @include('admin.partials.footer')
+@livewireScripts
 </body>
 
 </html>

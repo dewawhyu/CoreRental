@@ -1,4 +1,5 @@
 <div>
+    <input wire:model="search" type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
     <table class="table user-table table-hover align-items-center">
         <thead>
             <tr>
@@ -10,12 +11,13 @@
             </tr>
         </thead>
         <tbody>
+            @foreach ($members as $member)
             <tr>
                 <td><a href="#" class="d-flex align-items-center"><img
                             src="../assets/img/team/profile-picture-1.jpg"
                             class="avatar rounded-circle me-3" alt="Avatar">
-                        <div class="d-block"><span class="fw-bold">Roy Fendley</span>
-                            <div class="small text-gray">info@example.com</div>
+                        <div class="d-block"><span class="fw-bold">{{ $member->namadepan }}{{ $member->namabelakang }}</span>
+                            <div class="small text-gray">{{ $member->email }}</div>
                         </div>
                     </a></td>
                 <td><span class="fw-normal">10 Feb 2020</span></td>
@@ -69,6 +71,11 @@
                     </svg>
                 </td>
             </tr>
+            @endforeach
         </tbody>
     </table>
+    <br>
+    <div class="full-right">
+    {{ $members->links() }}
+</div>
 </div>
