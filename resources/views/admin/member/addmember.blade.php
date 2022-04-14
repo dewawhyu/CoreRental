@@ -56,15 +56,6 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                            <label for="">Informasi Tambahan</label>
-                            <textarea class="form-control" name="" id="" placeholder=""></textarea>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="h5 my-4">Informasi Penting</h2>
-                <div class="row">
                     <div class="col-sm-12 mb-3">
                         <div class="form-group">
                             <label for="address">Alamat Lengkap</label>
@@ -73,16 +64,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 mb-3">
+                    <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <label for="city">Kota</label>
-                            <input class="form-control" id="city" type="text" placeholder="Kota" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="zip">Kode Pos</label>
-                            <input class="form-control" id="zip" type="tel" placeholder="Kode Pos" required>
+                            <label for="">Informasi Tambahan</label>
+                            <textarea class="form-control" name="" id="" placeholder=""></textarea>
                         </div>
                     </div>
                 </div>
