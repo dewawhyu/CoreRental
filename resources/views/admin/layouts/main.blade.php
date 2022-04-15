@@ -2,10 +2,7 @@
 <html lang="en">
 @include('admin.partials.header')
 <body>
-
 <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-
-
 <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
     <a class="navbar-brand me-lg-5" href="index.html">
         <img class="navbar-brand-dark" src="assets/img/brand/light.svg" alt="Volt logo"/> <img

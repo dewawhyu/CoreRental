@@ -47,5 +47,6 @@
     <!-- Volt CSS -->
     <link type="text/css" href="{{ asset('css/volt.css') }}" rel="stylesheet">
     <link type="text/css" href="{{ asset('vendor/fontawesome/css/all.min.css') }}" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @livewireStyles
 </head>
